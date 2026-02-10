@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Scheduler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Job Scheduler Dashboard</h1>
+
+<div class="container">
+
+<h3>Create Job</h3>
+
+<input type="text" id="task" placeholder="Task Name">
+<input type="text" id="payload" placeholder="Payload">
+<input type="text" id="priority" placeholder="Priority">
+
+<br>
+<button onclick="createJob()">Create Job</button>
+<button onclick="loadJobs()">View Jobs</button>
+
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Task</th>
+<th>Priority</th>
+<th>Status</th>
+<th>Action</th>
+</tr>
+</thead>
+
+<tbody id="jobTable"></tbody>
+</table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
